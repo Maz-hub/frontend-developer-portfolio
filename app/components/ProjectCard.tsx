@@ -9,7 +9,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   });
 
   return (
-    <div className="rounded-lg overflow-hidden border shadow-sm transition hover:shadow-md hover:scale-[1.02] bg-glass-gray border-primary-blue-dark">
+    <div className=" h-full flex flex-col rounded-lg overflow-hidden border shadow-sm transition hover:shadow-md hover:scale-[1.02] bg-glass-gray border-primary-blue-dark">
       <img
         src={project.image}
         alt={project.title}
@@ -18,11 +18,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
         style={{ boxShadow: "0 0 8px rgba(14,26,43,0.6)" }}
       />
 
-      <div className="p-5 flex flex-col gap-3">
+      <div className="p-5 flex flex-1 flex-col gap-3">
         {/* Title */}
-        <h3 className="text-2xl font-semibold text-[var(--color-text-dark)">
-          {project.title}
-        </h3>
+        <h3 className="text-2xl font-semibold text-dark">{project.title}</h3>
 
         {/* Description */}
         <p className="text-sm leading-relaxed text-light-gray">
@@ -48,7 +46,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
         {/* Buttons */}
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-5 text-center">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 text-center mt-auto pt-5">
           {/* Live Demo Button */}
           <a
             href={project.url}
