@@ -82,3 +82,16 @@ body {
     will-change: transform;
   }
 }
+
+@layer components {
+
+  /* Primary button */
+  .btn-primary {
+    @apply bg-secondary-green text-primary-blue-dark px-8 py-4 rounded-lg hover:bg-accent-green transition;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply border border-secondary-green text-light-gray px-8 py-4 rounded-lg hover:bg-accent-green hover:text-primary-blue-dark transition;
+  }
+}
