@@ -23,9 +23,9 @@
   /* Medium green for secondary elements */
   --color-dark-green: #0e7b16;
   /* Dark green for text or backgrounds */
-
-  /* Yellow-Light */
-  --color-light-yellow: #c6de95;
+  --color-glass-green: rgba(95, 176, 37, 0.06)
+    /* Yellow-Light */
+    --color-light-yellow: #c6de95;
   /* Light yellow for accents */
   --color-pale-yellow: #f4fef4;
   /* Very light yellow for backgrounds */
@@ -35,7 +35,7 @@
   /* Light gray for backgrounds */
   --color-medium-gray: #b5c3ca;
   /* Medium gray for text or borders */
-  --color-dark-gray: #a4b2ae;
+  --color-glass-gray: rgba(164, 178, 174, 0.06);
   /* Darker gray for secondary elements */
 
   /* Dark mode variants */
