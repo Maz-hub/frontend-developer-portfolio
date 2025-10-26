@@ -1,87 +1,71 @@
-# Welcome to React Router!
+# 🌐 Frontend Developer Portfolio (React + Tailwind 4 + Vite)
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+This is my personal **Frontend Developer Portfolio**, built with **React**, **React Router 7**, **Tailwind CSS v4**, and **Vite**.  
+It showcases my real projects, experiments, and growth as I transition into frontend development.
 
 ---
 
-Built with ❤️ using React Router.
+## ✨ Overview
+
+The portfolio is designed to reflect who I am as a developer — **curious, detail-oriented, and grounded** — with a clean, minimal UI built around calm dark blue tones, green and soft yellow accents, and simple, clear typography.
+
+Everything you see here is part of my learning and creation process, built project by project.
+
+---
+
+## ⚙️ Tech Stack
+
+- **React 18** – component-based UI  
+- **React Router 7** – for navigation and routing  
+- **Tailwind CSS v4** – with custom CSS variables and utility tokens  
+- **Vite** – lightning-fast dev environment  
+- **Outfit** – global sans-serif font for readability  
+- **JSON data** – for project storage and filtering logic
+
+---
+
+## 🧭 Current Features
+
+✅ **Projects Page**  
+- Displays all projects dynamically from `db.json`  
+- Filter by category (Frontend Mentor / CS50W / Freelance)  
+- Pagination and sorting (newest first)
+
+✅ **Design System**  
+- Custom color tokens and button utilities (`btn-primary`, `btn-secondary`, `btn-filter-active`, `btn-filter-default`)  
+- Dark navy base with green + pastel yellow accents  
+- Minimal, clean layout (no glow or neon effects)  
+
+✅ **Typography & Font**  
+- Global font set via CSS variable `--font-sans: "Outfit"`  
+- Tailored for readability and visual balance
+
+---
+
+## 🚧 Next Step
+
+🟢 Building the **Featured Projects** section on the homepage  
+Only projects with `"featured": true` in `db.json` will be displayed.
+
+
+---
+
+## 🎨 Design Direction
+
+- **Base color:** Dark navy (`--surface`)
+- **Accent colors:** Green (`--accent-green`), Soft pastel yellow (`--accent-yellow`)
+- **Typography:** Clean, rounded, friendly  
+- **UI tone:** Calm, minimal, modern
+
+
+---
+
+## 🚀 Setup
+
+To run locally:
+
+```bash
+npm install
+npm run dev
+
+
